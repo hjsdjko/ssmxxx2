@@ -1,0 +1,23 @@
+#
+#Mon Sep 19 09:15:14 CST 2011
+genBasicCompId=false
+sessionFactoryName=
+profile=
+daoSFId=sessionFactory
+version=3.1
+jndiPath=
+detectM2M=false
+reStrategyClass=
+springDaoFile=WebRoot/WEB-INF/applicationContext.xml
+useJavaTypes=true
+keyGenerator=increment
+libInstallFolder=/WebRoot/WEB-INF/lib
+addLibs2Project=true
+genVersionTag=false
+sessionFactoryId=sessionFactory
+basePersistenceClass=
+reSettingsFile=
+configFile=/s2shyyypglxthx1312ANCD/WebRoot/WEB-INF/applicationContext.xml
+createConfigFile=false
+addLibs2Classpath=true
+

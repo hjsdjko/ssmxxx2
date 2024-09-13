@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="successAdd">/common/add_success.jsp</result>
+            <result name="successDel">/common/del_success.jsp</result>
+            <result name="successUpdate">/common/update_success.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+        </global-results>
+        
+       <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+        <action name="index" class="indexAction" method="index">
+            <result name="success">/index.jsp</result>
+        </action>
+		<action name="lyblist" class="lyblistAction" method="lyblist">
+            <result name="success">lyblist.jsp</result>
+        </action>
+		
+		<action name="allusersAdd" class="allusersAction" method="allusersAdd">
+        </action>
+        <action name="allusersDel" class="allusersAction" method="allusersDel">
+        </action>
+        <action name="allusersList" class="allusersAction" method="allusersList">
+            <result name="success">yhzhgl.jsp</result>
+        </action>
+        
+		<action name="yonghuzhuceAdd" class="yonghuzhuceAction" method="yonghuzhuceAdd">
+        </action>
+        <action name="yonghuzhuceDel" class="yonghuzhuceAction" method="yonghuzhuceDel">
+        </action>
+		 <action name="yonghuzhuceIssh" class="yonghuzhuceAction" method="yonghuzhuceIssh">
+        </action>
+        <action name="yonghuzhuceList" class="yonghuzhuceAction" method="yonghuzhuceList">
+            <result name="success">yonghuzhuce_list.jsp</result>
+        </action>
+        <action name="yonghuzhucePre" class="yonghuzhuceAction" method="yonghuzhucePre">
+            <result name="success">yonghuzhuce_updt.jsp</result>
+        </action>
+		<action name="yonghuzhucePre2" class="yonghuzhuceAction" method="yonghuzhucePre2">
+            <result name="success">yonghuzhuce_updt2.jsp</result>
+        </action>
+        <action name="yonghuzhuceUpdt" class="yonghuzhuceAction" method="yonghuzhuceUpdt">
+        </action>
+		<action name="yonghuzhuceUpdt2" class="yonghuzhuceAction" method="yonghuzhuceUpdt2">
+        </action>
+        <action name="yonghuzhuceRes" class="yonghuzhuceAction" method="yonghuzhuceRes">
+            <result name="success">/admin/yonghuzhuce/yonghuzhuceRes.jsp</result>
+        </action>
+		
+	
+		
+		
+		<action name="xinwentongzhiAdd" class="xinwentongzhiAction" method="xinwentongzhiAdd">
+        </action>
+        <action name="xinwentongzhiDel" class="xinwentongzhiAction" method="xinwentongzhiDel">
+        </action>
+        <action name="xinwentongzhiList" class="xinwentongzhiAction" method="xinwentongzhiList">
+            <result name="success">xinwentongzhi_list.jsp</result>
+        </action>
+        <action name="xinwentongzhiPre" class="xinwentongzhiAction" method="xinwentongzhiPre">
+            <result name="success">xinwentongzhi_updt.jsp</result>
+        </action>
+        <action name="xinwentongzhiUpdt" class="xinwentongzhiAction" method="xinwentongzhiUpdt">
+        </action>
+		<action name="news" class="xinwentongzhiAction" method="news">
+            <result name="success">news.jsp</result>
+        </action>
+		<action name="ggdetail" class="xinwentongzhiAction" method="ggdetail">
+            <result name="success">gg_detail.jsp</result>
+        </action>
+		
+		<action name="youqinglianjieAdd" class="youqinglianjieAction" method="youqinglianjieAdd">
+        </action>
+        <action name="youqinglianjieDel" class="youqinglianjieAction" method="youqinglianjieDel">
+        </action>
+        <action name="youqinglianjieList" class="youqinglianjieAction" method="youqinglianjieList">
+            <result name="success">youqinglianjie_list.jsp</result>
+        </action>
+        <action name="youqinglianjiePre" class="youqinglianjieAction" method="youqinglianjiePre">
+            <result name="success">youqinglianjie_updt.jsp</result>
+        </action>
+        <action name="youqinglianjieUpdt" class="youqinglianjieAction" method="youqinglianjieUpdt">
+        </action>
+		
+		<action name="liuyanbanAdd" class="liuyanbanAction" method="liuyanbanAdd">
+        </action>
+        <action name="liuyanbanDel" class="liuyanbanAction" method="liuyanbanDel">
+        </action>
+        <action name="liuyanbanList" class="liuyanbanAction" method="liuyanbanList">
+            <result name="success">liuyanban_list.jsp</result>
+        </action>
+        <action name="liuyanbanPre" class="liuyanbanAction" method="liuyanbanPre">
+            <result name="success">liuyanban_updt.jsp</result>
+        </action>
+		<action name="liuyanbanHf" class="liuyanbanAction" method="liuyanbanHf">
+            <result name="success">liuyanban_updtlb.jsp</result>
+        </action>
+        <action name="liuyanbanUpdt" class="liuyanbanAction" method="liuyanbanUpdt">
+        </action>
+		<action name="pinglunAdd" class="pinglunAction" method="pinglunAdd">
+        </action>
+        <action name="pinglunDel" class="pinglunAction" method="pinglunDel">
+        </action>
+        <action name="pinglunList" class="pinglunAction" method="pinglunList">
+            <result name="success">pinglun_list.jsp</result>
+        </action>
+        <action name="pinglunPre" class="pinglunAction" method="pinglunPre">
+            <result name="success">pinglun_updt.jsp</result>
+        </action>
+        <action name="pinglunUpdt" class="pinglunAction" method="pinglunUpdt">
+        </action>
+		
+		<action name="shoucangjiluAdd" class="shoucangjiluAction" method="shoucangjiluAdd">
+        </action>
+        <action name="shoucangjiluDel" class="shoucangjiluAction" method="shoucangjiluDel">
+        </action>
+        <action name="shoucangjiluList" class="shoucangjiluAction" method="shoucangjiluList">
+            <result name="success">shoucangjilu_list.jsp</result>
+        </action>
+        <action name="shoucangjiluPre" class="shoucangjiluAction" method="shoucangjiluPre">
+            <result name="success">shoucangjilu_updt.jsp</result>
+        </action>
+        <action name="shoucangjiluUpdt" class="shoucangjiluAction" method="shoucangjiluUpdt">
+        </action>
+		<action name="shoucangjiluList2" class="shoucangjiluAction" method="shoucangjiluList2"><result name="success">shoucangjilu_list2.jsp</result></action>
+		
+		<action name="yaopinleibieAdd" class="yaopinleibieAction" method="yaopinleibieAdd"></action>
+		<action name="yaopinleibieDel" class="yaopinleibieAction" method="yaopinleibieDel"></action>
+		<action name="yaopinleibieList" class="yaopinleibieAction" method="yaopinleibieList"><result name="success">yaopinleibie_list.jsp</result></action>
+		<action name="yaopinleibiePre" class="yaopinleibieAction" method="yaopinleibiePre"><result name="success">yaopinleibie_updt.jsp</result></action>
+		<action name="yaopinleibieUpdt" class="yaopinleibieAction" method="yaopinleibieUpdt"></action>
+				<action name="shangpinxinxiAdd" class="shangpinxinxiAction" method="shangpinxinxiAdd"></action>
+		<action name="shangpinxinxiDel" class="shangpinxinxiAction" method="shangpinxinxiDel"></action>
+		<action name="shangpinxinxiList" class="shangpinxinxiAction" method="shangpinxinxiList"><result name="success">shangpinxinxi_list.jsp</result></action>
+		<action name="shangpinxinxiPre" class="shangpinxinxiAction" method="shangpinxinxiPre"><result name="success">shangpinxinxi_updt.jsp</result></action>
+		<action name="shangpinxinxiUpdt" class="shangpinxinxiAction" method="shangpinxinxiUpdt"></action>
+		<action name="spxxList" class="shangpinxinxiAction" method="spxxList"><result name="success">shangpinxinxilist.jsp</result></action>		<action name="spxxListtp" class="shangpinxinxiAction" method="spxxListtp"><result name="success">shangpinxinxilisttp.jsp</result></action>		<action name="shangpinxinxiDetail" class="shangpinxinxiAction" method="shangpinxinxiDetail"><result name="success">shangpinxinxi_detail.jsp</result></action>		<action name="spxxDetail" class="shangpinxinxiAction" method="spxxDetail"><result name="success">shangpinxinxidetail.jsp</result></action>				<action name="yonghuAdd" class="yonghuAction" method="yonghuAdd"></action>
+		<action name="yonghuDel" class="yonghuAction" method="yonghuDel"></action>
+		<action name="yonghuList" class="yonghuAction" method="yonghuList"><result name="success">yonghu_list.jsp</result></action>
+		<action name="yonghuPre" class="yonghuAction" method="yonghuPre"><result name="success">yonghu_updt.jsp</result></action>
+		<action name="yonghuUpdt" class="yonghuAction" method="yonghuUpdt"></action>
+		<action name="yonghuDetail" class="yonghuAction" method="yonghuDetail"><result name="success">yonghu_detail.jsp</result></action>		<action name="yhDetail" class="yonghuAction" method="yhDetail"><result name="success">yonghudetail.jsp</result></action>		<action name="yonghuPre2" class="yonghuAction" method="yonghuPre2"><result name="success">yonghu_updt2.jsp</result></action>		<action name="yonghuUpdt2" class="yonghuAction" method="yonghuUpdt2"></action>				<action name="goumaiAdd" class="goumaiAction" method="goumaiAdd"></action>
+		<action name="goumaiDel" class="goumaiAction" method="goumaiDel"></action>
+		<action name="goumaiList" class="goumaiAction" method="goumaiList"><result name="success">goumai_list.jsp</result></action>
+		<action name="goumaiPre" class="goumaiAction" method="goumaiPre"><result name="success">goumai_updt.jsp</result></action>
+		<action name="goumaiUpdt" class="goumaiAction" method="goumaiUpdt"></action>
+		<action name="goumaiIssh" class="goumaiAction" method="goumaiIssh"></action>		<action name="goumaiList2" class="goumaiAction" method="goumaiList2"><result name="success">goumai_list2.jsp</result></action>		<action name="goumaiDetail" class="goumaiAction" method="goumaiDetail"><result name="success">goumai_detail.jsp</result></action>		<action name="gmDetail" class="goumaiAction" method="gmDetail"><result name="success">goumaidetail.jsp</result></action>				<action name="dingdanxinxiAdd" class="dingdanxinxiAction" method="dingdanxinxiAdd"></action>
+		<action name="dingdanxinxiDel" class="dingdanxinxiAction" method="dingdanxinxiDel"></action>
+		<action name="dingdanxinxiList" class="dingdanxinxiAction" method="dingdanxinxiList"><result name="success">dingdanxinxi_list.jsp</result></action>
+		<action name="dingdanxinxiPre" class="dingdanxinxiAction" method="dingdanxinxiPre"><result name="success">dingdanxinxi_updt.jsp</result></action>
+		<action name="dingdanxinxiUpdt" class="dingdanxinxiAction" method="dingdanxinxiUpdt"></action>
+		<action name="dingdanxinxiList2" class="dingdanxinxiAction" method="dingdanxinxiList2"><result name="success">dingdanxinxi_list2.jsp</result></action>		<action name="dingdanxinxiDetail" class="dingdanxinxiAction" method="dingdanxinxiDetail"><result name="success">dingdanxinxi_detail.jsp</result></action>		<action name="ddxxDetail" class="dingdanxinxiAction" method="ddxxDetail"><result name="success">dingdanxinxidetail.jsp</result></action>				<action name="yaopinrukuAdd" class="yaopinrukuAction" method="yaopinrukuAdd"></action>
+		<action name="yaopinrukuDel" class="yaopinrukuAction" method="yaopinrukuDel"></action>
+		<action name="yaopinrukuList" class="yaopinrukuAction" method="yaopinrukuList"><result name="success">yaopinruku_list.jsp</result></action>
+		<action name="yaopinrukuPre" class="yaopinrukuAction" method="yaopinrukuPre"><result name="success">yaopinruku_updt.jsp</result></action>
+		<action name="yaopinrukuUpdt" class="yaopinrukuAction" method="yaopinrukuUpdt"></action>
+		<action name="yaopinrukuDetail" class="yaopinrukuAction" method="yaopinrukuDetail"><result name="success">yaopinruku_detail.jsp</result></action>		<action name="yprkDetail" class="yaopinrukuAction" method="yprkDetail"><result name="success">yaopinrukudetail.jsp</result></action>				
+
+    </package>
+</struts>
